@@ -62,7 +62,7 @@
         // MESSAGERIE & FCM (5)
         ['chapter'=>0, 'question'=>"Endpoint polling messages ?", 'options'=>['GET /api/poll','GET /api/conversations/{id}/messages?after={lastId}','POST /api/since','WebSocket'], 'answer'=>1, 'explanation'=>"Retourne uniquement id > lastId. Reponse legere."],
         ['chapter'=>0, 'question'=>"Sur AppLifecycleState.paused, le ChatScreen ?", 'options'=>['Continue polling','Cancel timer pour laisser FCM prendre le relais','Crash','Force resume'], 'answer'=>1, 'explanation'=>"FCM gere les messages en background, plus efficace energie."],
-        ['chapter'=>0, 'question'=>"Handler FCM background : annotation requise ?", 'options'=>['@override','@pragma(\\'vm:entry-point\\')','@static','aucune'], 'answer'=>1, 'explanation'=>"@pragma(vm:entry-point) car la fonction est appelee depuis Dart VM sans context d'app."],
+        ['chapter'=>0, 'question'=>"Handler FCM background : annotation requise ?", 'options'=>['@override','@pragma(\'vm:entry-point\')','@static','aucune'], 'answer'=>1, 'explanation'=>"@pragma(vm:entry-point) car la fonction est appelee depuis Dart VM sans context d'app."],
         ['chapter'=>0, 'question'=>"Package PHP Firebase compatible PHP 8.2 ?", 'options'=>['kreait/firebase-php ^8.0','kreait/firebase-php ^7.16','firebase/php-jwt','google/cloud-firestore'], 'answer'=>1, 'explanation'=>"^7.16. La 8.x exige PHP 8.3+."],
         ['chapter'=>0, 'question'=>"Extension PHP requise pour Firebase ?", 'options'=>['gd','sodium','imagick','mbstring'], 'answer'=>1, 'explanation'=>"sodium pour le JWT OAuth2."],
 
