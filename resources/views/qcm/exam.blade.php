@@ -45,7 +45,7 @@
         ['chapter'=>0, 'question'=>"Listeners de NewNotification (Laravel 12 auto-discovery) ?", 'options'=>['1','2 (PersistNotification + SendFcmForNotification, synchrones)','3','aucun'], 'answer'=>1, 'explanation'=>"2 listeners synchrones (pas ShouldQueue car Hostinger sans queue worker)."],
         ['chapter'=>0, 'question'=>"Pourquoi listeners synchrones ?", 'options'=>['Plus simple','Hostinger sans queue:work persistant','Plus rapide','Aucune raison'], 'answer'=>1, 'explanation'=>"Hostinger shared n'a pas de queue worker persistant."],
         ['chapter'=>0, 'question'=>"Bug historique des listeners ?", 'options'=>['Aucun','Double enregistrement (auto-discovery + manuel) = listeners 2x par event','Trop lents','Permission denied'], 'answer'=>1, 'explanation'=>"Fix : auto-discovery uniquement, pas de Event::listen() manuel."],
-        ['chapter'=>0, 'question'=>"Service singleton pour les push FCM ?", 'options'=>['FCMService','FirebasePushService','PushNotifier','Notifier'], 'answer'=>1, 'explanation'=>"FirebasePushService. Methode sendToUser($userId, $title, $body, $data)."],
+        ['chapter'=>0, 'question'=>"Service singleton pour les push FCM ?", 'options'=>['FCMService','FirebasePushService','PushNotifier','Notifier'], 'answer'=>1, 'explanation'=>"FirebasePushService. Methode sendToUser(\$userId, \$title, \$body, \$data)."],
 
         // FLUTTER (10)
         ['chapter'=>0, 'question'=>"Quel widget enveloppe l'app pour Riverpod ?", 'options'=>['MaterialApp','ProviderScope','RiverpodApp','Wrapper'], 'answer'=>1, 'explanation'=>"runApp(ProviderScope(child: ...))."],
